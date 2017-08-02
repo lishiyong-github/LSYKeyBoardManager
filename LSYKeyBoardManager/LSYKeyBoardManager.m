@@ -87,7 +87,9 @@
                     return ;
                 }
             }else {
-                CGFloat responderSpaceKeyboard = endKeyboardRect.origin.y - CGRectGetMaxY(firstResponder.frame);
+                UIWindow * window=[[[UIApplication sharedApplication] delegate] window];
+                CGRect rect=[firstResponder convertRect: firstResponder.bounds toView:window];
+                CGFloat responderSpaceKeyboard = endKeyboardRect.origin.y - CGRectGetMaxY(rect);
                 if (responderSpaceKeyboard < 50) {
                     CGFloat offsetY = ABS(responderSpaceKeyboard) + 80.0;
                     [UIView animateWithDuration:duration animations:^{
