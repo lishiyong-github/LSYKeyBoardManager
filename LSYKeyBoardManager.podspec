@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LSYKeyBoardManager"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "a class to observer keyboard"
   s.homepage     = "https://github.com/lishiyong-github/LSYKeyBoardManager"
   s.license      = "MIT"

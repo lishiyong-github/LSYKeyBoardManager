@@ -10,6 +10,7 @@
 
 @interface LSYKeyBoardManager ()
 @property (nonatomic, strong) UIView *observerView;
+
 @end
 @implementation LSYKeyBoardManager
 + (instancetype)keyboadWithObserverView:(UIView *)observerView{
